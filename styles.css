@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+main .sneaker-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+main .sneaker-item {
+    text-align: center;
+}
+main .sneaker-image {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+main .sneaker-image:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+main .sneaker-image:active {
+    transform: scale(0.9);
+    border-color: #555;
+}
+main .sneaker-image:focus {
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+main .sneaker-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
